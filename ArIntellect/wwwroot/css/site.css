@@ -10,6 +10,7 @@ html {
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+
 }
 
 html {
@@ -18,5 +19,84 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: #262B3A;
+}
+rectangls-paragraf-text {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+rectangls-text {
+
+}
+
+
+
+rectangle1 {
+    /* Rectangle 1 */
+
+    width: 298px;
+    height: 269px;
+    background: #22242D;
+}
+
+rectangle2 {
+    /* Rectangle 2 */
+
+    position: absolute;
+    width: 298px;
+    height: 269px;
+    left: 412px;
+    top: 1693px;
+    background: #22242D;
+}
+
+services-container {
+    margin: 50px 0;
+    height: 795px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+
+rectangle3 {
+    /* Rectangle 3 */
+
+    position: absolute;
+    width: 298px;
+    height: 269px;
+    left: 730px;
+    top: 1693px;
+    background: #22242D;
+}
+
+
+rectangle4 {
+    /* Rectangle 4 */
+
+    position: absolute;
+    width: 298px;
+    height: 269px;
+    left: 1048px;
+    top: 1693px;
+    background: #22242D;
+}
+
+p{
+    color:white
+}
+
+img {
+
+    padding: 106px;
+    margin-top: -78px;
+    margin-left: -98px;
+    height: 269px;
+    width: 298px;
 }
