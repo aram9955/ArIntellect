@@ -22,84 +22,48 @@ body {
     margin-bottom: 60px;
     background: #262B3A;
 }
-rectangls-paragraf-text {
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 23px;
-    text-transform: capitalize;
-    margin-left: 8px;
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
 }
 
-rectangls-text {
-
+.navbar {
+    width: 1200px;
+    margin: auto;
 }
 
-
-
-rectangle1 {
-    /* Rectangle 1 */
-
-    width: 298px;
-    height: 269px;
-    background: #22242D;
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
 }
 
-rectangle2 {
-    /* Rectangle 2 */
-
-    position: absolute;
-    width: 298px;
-    height: 269px;
-    left: 412px;
-    top: 1693px;
-    background: #22242D;
+.logo {
+    color: #ffffff;
 }
 
-services-container {
-    margin: 50px 0;
-    height: 795px;
-    background-repeat: no-repeat;
-    background-position: left;
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
 }
 
-
-rectangle3 {
-    /* Rectangle 3 */
-
-    position: absolute;
-    width: 298px;
-    height: 269px;
-    left: 730px;
-    top: 1693px;
-    background: #22242D;
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+    ul li {
+        list-style: none;
+        margin-left: 62px;
+    }
 
-rectangle4 {
-    /* Rectangle 4 */
-
-    position: absolute;
-    width: 298px;
-    height: 269px;
-    left: 1048px;
-    top: 1693px;
-    background: #22242D;
-}
-
-p{
-    color:white
-}
-
-img {
-
-    padding: 106px;
-    margin-top: -78px;
-    margin-left: -98px;
-    height: 269px;
-    width: 298px;
-}
-arintellect{
-
-}
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
