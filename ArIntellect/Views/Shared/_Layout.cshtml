@@ -11,34 +11,32 @@
 <body>
     <header style="max-width:100%;">
         <nav class="navbar" role="navigation" aria-label="main navigation">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand" style="margin-top:11px;">
-                        <img src="~/css/Images/ArIntellectLogo.svg" style="padding: 89px;margin-left: 2px;margin-top: -128px;margin-bottom: -158px;" />
-                        <p class="navbar-item logo" style="font-size: 17px;font-weight: 400;line-height: 22px;margin-left: 180px;margin-top: -10px;">ArIntellect</p>
-                    </div>
-                    <div class="navbar-menu">
-                        <ul class="navbar-end" style="margin: 0%;color:white;">
-                            <li class="navbar-item" style="color:white;"><a  >About</a></li>
-                            <li class="navbar-item"style="color:white;"><a >Services</a></li>
-                            <li class="navbar-item"style="color:white;"><a >Projects</a></li>
-                            <li class="navbar-item"style="color:white;"><a >Vacancies</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <button class="button is-primary , ContactUs">
-                            Contact Us
-                        </button>
-                    </div>
+            <div class="container">
+                <div class="navbar-brand" style="display:block">
+                    <img src="~/css/Images/ArIntellectLogo.svg" style="display: inline-block;height: 66px;
+}" />
+                    <p class="navbar-item logo" style="font-size: 17px;font-weight: 400;">ArIntellect</p>
                 </div>
-            </nav>
+                <div class="navbar-menu">
+                    <ul class="navbar-end" style="margin: 0%;color:white;">
+                        <li class="navbar-item" style="color:white;"><a>About</a></li>
+                        <li class="navbar-item" style="color:white;"><a>Services</a></li>
+                        <li class="navbar-item" style="color:white;"><a>Projects</a></li>
+                        <li class="navbar-item" style="color:white;"><a>Vacancies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="button is-primary , ContactUs">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
         </nav>
-        <script src="~/js/site.js"> </script>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <div>
+
+        @RenderBody()
+
     </div>
 
     <footer class="border-top footer text-muted">
@@ -64,6 +62,14 @@
         height: 84px;
     }
 
+    .navbar-brand {
+        display:block;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 1.25rem;
+        text-decoration: none;
+        width: 165px;
+    }
     .navbar-item {
         background: #262b3a;
         color: #fff;
@@ -75,12 +81,16 @@
     }
 
     .navbar .logo {
+        font-size: 17px;
+        font-weight: 400;
+        display: inline-block;
+        margin-left: 8px;
         margin: 0;
     }
 
     .navbar .menu ul {
         list-style: none;
-        padding: 0;
+        padding: 27px 0;
         margin: 0;
     }
 

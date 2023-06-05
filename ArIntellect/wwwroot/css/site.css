@@ -31,7 +31,6 @@ body {
 }
 
 .navbar {
-    width: 1200px;
     margin: auto;
 }
 
@@ -75,6 +74,98 @@ ul {
 /* Example media query for medium screens */
 @media (min-width: 768px) and (max-width: 1023px) {
     /* Styles for medium screens */
+    .laptop {
+        display: none;
+    }
+    .laptop-text {
+        display: none;
+    }
+    .laptop-lines {
+        display: none;
+    }
+    .p {
+        color: white
+    }
+    .p1 {
+        color: #86DAA2 ;
+        position: absolute;
+        width: 75px;
+        height: 21px;
+        left: 142px;
+        top: 270px;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #86DAA2;
+    }
+    .p2 {
+        color: white;
+        position: absolute;
+        width: 293px;
+        height: 54px;
+        left: 33px;
+        top: 295px;
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+    .p3 {
+        color: #86DAA2
+    }
+    .p4 {
+        color: white
+    }
+    .p5 {
+        color: #86DAA2
+    }
+    .p6 {
+        color: white
+    }
+    .p7 {
+        color: #86DAA2
+    }
+    .p8 {
+        color: white
+    }
+    .p9 {
+        color: #86DAA2
+    }
+    .p10 {
+        color: white
+    }
+    .about-text {
+        margin-left: 40px;
+        color: white;
+        margin-top: -680px;
+    }
+    .section-1 {
+        padding-top: 810px;
+        padding-bottom: 230px;
+    }
+    .firts-text {
+        position: absolute;
+        width: 265px;
+        height: 90px;
+        left: calc(50% - 265px/2 - 0.5px);
+        top: 120px;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
 }
 
 /* Example media query for large screens */
