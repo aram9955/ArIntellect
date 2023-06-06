@@ -18,6 +18,8 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 60px;
     background: #262B3A;
 }
@@ -50,6 +52,11 @@ body {
     height: 70px;
 }
 
+* {
+    border: 2px;
+    border-color: red;
+}
+
 ul {
     float: left;
     display: flex;
@@ -77,18 +84,21 @@ ul {
     .laptop {
         display: none;
     }
+
     .laptop-text {
         display: none;
     }
+
     .laptop-lines {
         display: none;
     }
+
     .p {
         color: white
     }
+
     .p1 {
-        color: #86DAA2 ;
-        position: absolute;
+        color: #86DAA2;
         width: 75px;
         height: 21px;
         left: 142px;
@@ -102,9 +112,9 @@ ul {
         text-transform: uppercase;
         color: #86DAA2;
     }
+
     .p2 {
         color: white;
-        position: absolute;
         width: 293px;
         height: 54px;
         left: 33px;
@@ -118,41 +128,47 @@ ul {
         text-transform: capitalize;
         color: #FFFFFF;
     }
+
     .p3 {
         color: #86DAA2
     }
+
     .p4 {
         color: white
     }
+
     .p5 {
         color: #86DAA2
     }
+
     .p6 {
         color: white
     }
+
     .p7 {
         color: #86DAA2
     }
+
     .p8 {
         color: white
     }
+
     .p9 {
         color: #86DAA2
     }
+
     .p10 {
         color: white
     }
+
     .about-text {
-        margin-left: 40px;
         color: white;
-        margin-top: -680px;
     }
+
     .section-1 {
-        padding-top: 810px;
-        padding-bottom: 230px;
     }
+
     .firts-text {
-        position: absolute;
         width: 265px;
         height: 90px;
         left: calc(50% - 265px/2 - 0.5px);
@@ -171,7 +187,9 @@ ul {
 /* Example media query for large screens */
 @media (min-width: 1024px) {
     /* Styles for large screens */
-
+    * {
+        border: 2px solid red;
+    }
     .section-1 {
         padding-top: 810px;
         padding-bottom: 230px;
@@ -192,8 +210,12 @@ ul {
         color: #FFFFFF;
     }
 
+    .about {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .p {
-        position: absolute;
         width: 977px;
         height: 318px;
         top: 351px;
@@ -224,74 +246,44 @@ ul {
         text-transform: capitalize;
         font-style: normal;
         color: #ffffff;
-        margin-left: 40px;
-        position: absolute;
-    }
-
-    .p3 {
-        position: absolute;
-        width: 101px;
-        height: 32px;
-        left: 669px;
-        top: 1534px;
-        font-family: Segoe UI;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
-        /* identical to box height */
-
-        text-transform: uppercase;
-        color: #86DAA2;
-    }
-
-    .p4 {
-        position: absolute;
-        width: 298px;
-        height: 67px;
-        left: 570px;
-        top: 1566px;
-        font-family: Segoe UI;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 67px;
-        /* identical to box height */
-
-        text-align: center;
-        text-transform: capitalize;
-        color: #FFFFFF;
-    }
-
-    .laptop {
-        padding: 0;
-        margin-left: 958px;
-        margin-top: 0;
-    }
-
-    .laptop-text {
-        padding: 78px;
-        margin-left: 1070px;
-        margin-top: -643px;
-    }
-
-    .laptop-lines {
-        padding: 0;
-        margin-left: 582px;
-        margin-top: -486px;
-        margin-bottom: 324px;
     }
 
     .about-text {
         margin-left: 40px;
         color: white;
-        margin-top: -680px;
     }
 
     .section-2 {
         padding-top: 280px;
         padding-bottom: 100px;
         color: white;
+    }
+
+    .rectangles {
+        display: flex;
+        gap: 20px;
+        justify-content: center
+    }
+    .section-title{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding-bottom:60px
+    }
+    .section-header {
+        font-size: 24px;
+        font-weight: 400;
+        color: #86DAA2;
+        line-height: 32px;
+        text-transform:uppercase;
+    }
+    .section-subheader {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 67px;
+        text-transform: capitalize;
+        font-style: normal;
+        color: #ffffff;
     }
 
     .services-p1 {
@@ -312,11 +304,11 @@ ul {
         margin-bottom: 50px;
     }
 
-    .rectangle1 {
-        width: 298px;
-        height: 269px;
+    .rectangle {
         background: #22242D;
         color: white;
+        width: 298px;
+        height: 269px;
     }
 
     .rectangle-b {
@@ -338,70 +330,12 @@ ul {
         margin-left: 18px
     }
 
-    .rectangle2 {
-        background: #22242D;
-        margin-top: -269px;
-        margin-left: 318px;
-        width: 298px;
-        height: 269px;
-        background: #22242D;
-    }
 
-    .rectangle3 {
-        width: 298px;
-        height: 269px;
-        margin-top: -269px;
-        margin-left: 638px;
-        background: #22242D;
-    }
-
-    .rectangle4 {
-        width: 298px;
-        height: 269px;
-        margin-top: -269px;
-        margin-left: 958px;
-        background: #22242D;
-    }
 
     .section-3 {
         padding-top: 150px;
         padding-bottom: 100px;
         color: white;
-    }
-
-    .p5 {
-        position: absolute;
-        width: 107px;
-        height: 32px;
-        left: 666px;
-        top: 2112px;
-        font-family: Segoe UI;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
-        /* identical to box height */
-
-        text-transform: uppercase;
-        color: #86DAA2;
-    }
-
-    .p6 {
-        position: absolute;
-        width: 252px;
-        height: 67px;
-        left: 594px;
-        top: 2144px;
-        font-family: Segoe UI;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 67px;
-        /* identical to box height */
-
-        text-align: center;
-        text-transform: capitalize;
-        color: #FFFFFF;
     }
 
     .work-p1 {
@@ -411,8 +345,6 @@ ul {
     }
 
     .work-p2 {
-        margin-top: -249px;
-        margin-left: 642px;
         width: 616px;
         height: 249px;
         background: #22242D;
@@ -424,56 +356,17 @@ ul {
         color: white;
     }
 
-    .p7 {
-        position: absolute;
-        width: 152px;
-        height: 36px;
-        left: 643px;
-        top: 2678px;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 36px;
-        /* identical to box height */
-
-        text-transform: uppercase;
-        color: #86DAA2;
-    }
-
-    .p8 {
-        position: absolute;
-        width: 318px;
-        height: 75px;
-        left: 560px;
-        top: 2714px;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 75px;
-        /* identical to box height */
-
-        text-align: center;
-        text-transform: capitalize;
-        color: #FFFFFF;
-    }
-
     .contactus {
-        width: 1440px;
+        width: 100%;
         height: 373px;
         background: #22242D;
         color: white;
     }
 
     .contactus1 {
-        margin-top: 140px;
-        margin-inline: 127px;
     }
 
     .contactus2 {
-        margin-top: 140px;
-        margin-inline: -213px;
     }
 
     .address-text {
@@ -495,13 +388,9 @@ ul {
 
 
     .phonesvg {
-        margin-inline: 685px;
-        margin-top: -240px;
     }
 
     .phonesvg1 {
-        margin-inline: 667px;
-        margin-top: -300px
     }
 
     .phone-text {
@@ -511,17 +400,12 @@ ul {
         line-height: 35px;
         text-align: center;
         margin-bottom: 32px;
-        margin-top: -100px;
     }
 
     .phone-text1 {
-        margin-left: 655px;
-        margin-top: -32px;
     }
 
     .emailsvg {
-        margin-inline: 1225px;
-        margin-top: -283px;
     }
 
     .email-text {
@@ -531,12 +415,9 @@ ul {
         line-height: 31.92px;
         text-align: center;
         margin-bottom: 32px;
-        margin-left: 1111px;
-        margin-top: -98px;
     }
 
     .emailik-text {
-        margin-left: 10px
     }
 
     .emailiksvg {
@@ -545,50 +426,12 @@ ul {
         line-height: 31.92px;
         text-align: center;
         margin-bottom: 32px;
-        margin-left: 1111px;
-        margin-top: -100px;
-        padding: 80px;
     }
 
     .section-5 {
         padding-top: 190px;
         padding-bottom: 100px;
         color: white;
-    }
-
-    .p9 {
-        position: absolute;
-        width: 123px;
-        height: 32px;
-        left: 658px;
-        top: 3372px;
-        font-family: Segoe UI;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
-        /* identical to box height */
-
-        text-transform: uppercase;
-        color: #86DAA2;
-    }
-
-    .p10 {
-        position: absolute;
-        width: 338px;
-        height: 67px;
-        left: 551px;
-        top: 3404px;
-        font-family: Segoe UI;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 67px;
-        /* identical to box height */
-
-        text-align: center;
-        text-transform: capitalize;
-        color: #FFFFFF;
     }
 
     .vacancies-text {
@@ -599,7 +442,6 @@ ul {
     .arintellect {
         padding: 85px;
         margin-left: 488px;
-        margin-top: -56px;
     }
 
     .section-6 {
@@ -613,8 +455,6 @@ ul {
         font-weight: 700;
         color: #ffffff;
         line-height: 23px;
-        margin-bottom: 30px;
-        margin-left: 280px;
     }
 
     .info-p2 {
@@ -622,7 +462,6 @@ ul {
         font-weight: 700;
         color: #ffffff;
         line-height: 23px;
-        margin-top: -50px;
         text-align: center;
     }
 
@@ -633,29 +472,17 @@ ul {
         line-height: 66.5px;
         text-align: center;
         margin-bottom: 30px;
-        margin-left: 600px;
-        margin-top: -57px;
     }
 
     .ar-info {
-        padding: 78px;
-        margin-left: -78px;
-        margin-bottom: 45px;
-        margin-top: -120px;
     }
 
     .info-t1 {
-        margin-left: 280px;
-        margin-top: -170px;
     }
 
     .info-t2 {
-        margin-top: -100px;
-        margin-left: 620px;
     }
 
     .info-t3 {
-        margin-left: 920px;
-        margin-top: -211px;
     }
 }
