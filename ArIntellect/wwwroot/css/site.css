@@ -219,27 +219,13 @@ ul {
         justify-content: space-between;
     }
 
-    .p {
-        width: 977px;
-        height: 318px;
-        top: 351px;
-        font-family: Segoe UI;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 136.41px;
-        font-size: 80px;
-        color: #ffffff;
-        text-align: center;
-        margin-inline: 351px;
-    }
+    
 
     .p1 {
-        margin-bottom: 32px;
         font-size: 24px;
         font-weight: 400;
         color: #86DAA2;
         line-height: 32px;
-        margin-left: 40px;
     }
 
     .p2 {
@@ -253,7 +239,6 @@ ul {
     }
 
     .about-text {
-        margin-left: 40px;
         color: white;
     }
 
@@ -274,6 +259,17 @@ ul {
         flex-direction: column;
         align-items: center;
         padding-bottom: 60px
+    }
+
+    .title {
+        display: flex;
+        padding-bottom: 24px;
+        justify-content: space-evenly;
+    }
+
+    .title-text {
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .section-header {
@@ -402,13 +398,13 @@ ul {
 
     .phonesvg1 {
     }
+
     .about-projects {
-        width:100%;
+        width: 100%;
         color: white;
         display: flex;
         justify-content: center;
         gap: 20px;
-    
     }
 
     .phone-text {
@@ -458,7 +454,6 @@ ul {
 
     .vacancies-text {
         text-align: center;
-        margin-left: 357px;
     }
 
     .arintellect {
@@ -472,39 +467,14 @@ ul {
         color: white;
     }
 
-    .info-p1 {
+
+    .logo {
         font-size: 17px;
-        font-weight: 700;
-        color: #ffffff;
-        line-height: 23px;
+        font-weight: 400;
+        display: inline-block;
     }
-
-    .info-p2 {
-        font-size: 17px;
-        font-weight: 700;
-        color: #ffffff;
-        line-height: 23px;
-        text-align: center;
-    }
-
-    .info-p3 {
-        font-size: 17px;
-        font-weight: 700;
-        color: #ffffff;
-        line-height: 66.5px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .ar-info {
-    }
-
-    .info-t1 {
-    }
-
-    .info-t2 {
-    }
-
-    .info-t3 {
+    .info-container {
+        display: inline-block;
     }
 }
+
